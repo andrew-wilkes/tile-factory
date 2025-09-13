@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://rrix721qyao5"]
+
+[ext_resource type="Shader" uid="uid://cfk6vwn4bcsvm" path="res://tile.gdshader" id="1_wd3yc"]
+[ext_resource type="Script" uid="uid://cgrnhwbwtyqjx" path="res://tile_factory.gd" id="2_rnx4n"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a2t34"]
+shader = ExtResource("1_wd3yc")
+shader_parameter/edge_width = 0.1
+shader_parameter/contrast = Vector4(0.8, 0.6, 0.4, 0.2)
+shader_parameter/color = Color(1, 0.266667, 1, 1)
+
+[node name="TileFactory" type="Node2D"]
+material = SubResource("ShaderMaterial_a2t34")
+script = ExtResource("2_rnx4n")
